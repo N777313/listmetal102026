@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Металлмен айналысатын компаниялар тизбеги</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <h1>Бул компания тизими металлмен айналысатын:</h1>
+
+        <!-- CSV акпараты куйу жери -->
+        <div class="upload-block">
+            <label for="csvFile" class="file-label">
+                CSV файл танданыз
+            </label>
+
+            <input
+                type="file"
+                id="csvFile"
+                accept=".csv,text/csv"
+            >
+
+            <span id="fileName">
+                Файл тандалмаган
+            </span>
+        </div>
+
+        <!-- Бул жерде JavaScript таблицаны курап береди -->
+        <div id="tableContainer"></div>
+
+    </div>
+
+    <script src="app.js"></script>
+
+</body>
+</html>
+
