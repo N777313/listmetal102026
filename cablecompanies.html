@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>Кабельные компании Казахстана</title>
+
+    <link
+        rel="stylesheet"
+        href="cablecompanies.css"
+    >
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         HEADER
+         ===================================================== -->
+
+    <header class="header">
+
+        <div class="header-left">
+
+            <h1>
+                Кабельные компании Казахстана
+            </h1>
+
+        </div>
+
+
+        <div class="header-right">
+
+            <span id="companyCount">
+                Загрузка...
+            </span>
+
+            <button
+                id="backButton"
+                type="button"
+            >
+                Назад
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         MAIN
+         ===================================================== -->
+
+    <main class="main">
+
+
+        <!-- =================================================
+             ПОИСК
+             ================================================= -->
+
+        <section class="controls">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Поиск по компаниям..."
+                autocomplete="off"
+            >
+
+        </section>
+
+
+
+        <!-- =================================================
+             TABLE
+             ================================================= -->
+
+        <section class="table-container">
+
+            <div
+                id="loadingMessage"
+                class="loading-message"
+            >
+                Загрузка базы компаний...
+            </div>
+
+
+            <div
+                id="errorMessage"
+                class="error-message"
+            ></div>
+
+
+            <div class="table-wrapper">
+
+                <table
+                    id="companyTable"
+                    class="company-table"
+                >
+
+                    <thead id="tableHead"></thead>
+
+                    <tbody id="tableBody"></tbody>
+
+                </table>
+
+            </div>
+
+        </section>
+
+
+    </main>
+
+
+
+    <script src="cablecompanies.js"></script>
+
+</body>
+
+</html>
