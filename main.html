@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta
+        name="viewport"
+        content="width=device-width, initial-scale=1.0"
+    >
+
+    <title>База компаний</title>
+
+    <link rel="stylesheet" href="main.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- =====================================================
+         HEADER
+         ===================================================== -->
+
+    <header class="header">
+
+        <div class="header-left">
+
+            <h1>База компаний</h1>
+
+        </div>
+
+
+        <div class="header-right">
+
+            <span id="companyCount">
+                Загрузка...
+            </span>
+
+            <button id="logoutButton">
+                Выйти
+            </button>
+
+        </div>
+
+    </header>
+
+
+
+    <!-- =====================================================
+         MAIN
+         ===================================================== -->
+
+    <main class="main">
+
+
+        <!-- =================================================
+             ПОИСК
+             ================================================= -->
+
+        <div class="controls">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Поиск по базе компаний..."
+            >
+
+        </div>
+
+
+
+        <!-- =================================================
+             ТАБЛИЦА
+             ================================================= -->
+
+        <div class="table-wrapper">
+
+            <table
+                id="companyTable"
+                class="company-table"
+            >
+
+                <thead id="tableHead"></thead>
+
+                <tbody id="tableBody"></tbody>
+
+            </table>
+
+        </div>
+
+
+    </main>
+
+
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>

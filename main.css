@@ -1,0 +1,378 @@
+/* ============================================================
+   ОБЩИЕ НАСТРОЙКИ
+   ============================================================ */
+
+* {
+    box-sizing: border-box;
+}
+
+
+body {
+
+    margin: 0;
+
+    font-family:
+        Arial,
+        Helvetica,
+        sans-serif;
+
+    background: #f4f6f8;
+
+    color: #222;
+}
+
+
+/* ============================================================
+   HEADER
+   ============================================================ */
+
+.header {
+
+    height: 70px;
+
+    padding: 0 25px;
+
+    background: #1e3c72;
+
+    color: white;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    box-shadow:
+        0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+
+.header-left h1 {
+
+    margin: 0;
+
+    font-size: 24px;
+
+    font-weight: 600;
+}
+
+
+.header-right {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 20px;
+}
+
+
+#companyCount {
+
+    font-size: 14px;
+
+    color: #e5e5e5;
+}
+
+
+/* ============================================================
+   LOGOUT
+   ============================================================ */
+
+#logoutButton {
+
+    padding: 9px 16px;
+
+    border: 1px solid rgba(255,255,255,0.5);
+
+    border-radius: 6px;
+
+    background: transparent;
+
+    color: white;
+
+    cursor: pointer;
+
+    font-size: 14px;
+}
+
+
+#logoutButton:hover {
+
+    background: rgba(255,255,255,0.15);
+}
+
+
+/* ============================================================
+   MAIN
+   ============================================================ */
+
+.main {
+
+    padding: 25px;
+}
+
+
+/* ============================================================
+   SEARCH
+   ============================================================ */
+
+.controls {
+
+    margin-bottom: 20px;
+}
+
+
+#searchInput {
+
+    width: 100%;
+
+    max-width: 500px;
+
+    height: 45px;
+
+    padding: 0 15px;
+
+    border: 1px solid #d0d5da;
+
+    border-radius: 7px;
+
+    background: white;
+
+    font-size: 15px;
+
+    outline: none;
+}
+
+
+#searchInput:focus {
+
+    border-color: #2a5298;
+
+    box-shadow:
+        0 0 0 3px rgba(42,82,152,0.1);
+}
+
+
+/* ============================================================
+   TABLE WRAPPER
+   ============================================================ */
+
+.table-wrapper {
+
+    width: 100%;
+
+    overflow-x: auto;
+
+    background: white;
+
+    border-radius: 8px;
+
+    box-shadow:
+        0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+
+/* ============================================================
+   TABLE
+   ============================================================ */
+
+.company-table {
+
+    width: max-content;
+
+    min-width: 100%;
+
+    border-collapse: collapse;
+
+    table-layout: auto;
+
+    font-size: 14px;
+}
+
+
+/* ============================================================
+   THEAD
+   ============================================================ */
+
+.company-table thead {
+
+    background: #1e3c72;
+
+    color: white;
+}
+
+
+.company-table th {
+
+    padding: 13px 15px;
+
+    text-align: left;
+
+    font-weight: 600;
+
+    border-right: 1px solid rgba(255,255,255,0.15);
+
+    white-space: nowrap;
+
+    position: sticky;
+
+    top: 0;
+
+    z-index: 2;
+}
+
+
+/* ============================================================
+   TBODY
+   ============================================================ */
+
+.company-table td {
+
+    padding: 11px 15px;
+
+    border-bottom: 1px solid #e5e7eb;
+
+    border-right: 1px solid #eeeeee;
+
+    white-space: nowrap;
+
+    vertical-align: middle;
+}
+
+
+.company-table tbody tr:hover {
+
+    background: #f2f6fc;
+}
+
+
+/* ============================================================
+   №
+   ============================================================ */
+
+.company-table th:first-child,
+.company-table td:first-child {
+
+    text-align: center;
+
+    width: 60px;
+
+    min-width: 60px;
+}
+
+
+/* ============================================================
+   КОМПАНИЯ
+   ============================================================ */
+
+.company-table th:nth-child(4),
+.company-table td:nth-child(4) {
+
+    min-width: 220px;
+}
+
+
+/* ============================================================
+   ОСНОВНАЯ ПРОДУКЦИЯ
+   ============================================================ */
+
+.company-table th:nth-child(6),
+.company-table td:nth-child(6) {
+
+    min-width: 280px;
+
+    white-space: normal;
+}
+
+
+/* ============================================================
+   ТЕЛЕФОН
+   ============================================================ */
+
+.company-table th:nth-child(7),
+.company-table td:nth-child(7) {
+
+    min-width: 180px;
+
+    width: 180px;
+
+    white-space: nowrap;
+}
+
+
+/* ============================================================
+   EMAIL
+   ============================================================ */
+
+.company-table th:nth-child(8),
+.company-table td:nth-child(8) {
+
+    min-width: 190px;
+}
+
+
+/* ============================================================
+   СОЦСЕТИ / САЙТ
+   ============================================================ */
+
+.company-table th:nth-child(10),
+.company-table td:nth-child(10),
+.company-table th:nth-child(11),
+.company-table td:nth-child(11),
+.company-table th:nth-child(12),
+.company-table td:nth-child(12),
+.company-table th:nth-child(13),
+.company-table td:nth-child(13) {
+
+    min-width: 130px;
+}
+
+
+/* ============================================================
+   ИСТОЧНИК
+   ============================================================ */
+
+.company-table th:last-child,
+.company-table td:last-child {
+
+    min-width: 120px;
+}
+
+
+/* ============================================================
+   МОБИЛЬНАЯ ВЕРСИЯ
+   ============================================================ */
+
+@media (max-width: 700px) {
+
+    .header {
+
+        padding: 0 15px;
+    }
+
+
+    .header-left h1 {
+
+        font-size: 19px;
+    }
+
+
+    .header-right {
+
+        gap: 10px;
+    }
+
+
+    #companyCount {
+
+        display: none;
+    }
+
+
+    .main {
+
+        padding: 15px;
+    }
+
+}
