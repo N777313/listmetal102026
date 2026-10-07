@@ -2,230 +2,117 @@
     box-sizing: border-box;
 }
 
-
 body {
     margin: 0;
-
-    min-height: 100vh;
-
-    font-family:
-        Arial,
-        Helvetica,
-        sans-serif;
-
-    background:
-        linear-gradient(
-            135deg,
-            #1e3c72,
-            #2a5298
-        );
-
-    display: flex;
-
-    justify-content: center;
-
-    align-items: center;
-}
-
-
-/* ============================================================
-   LOGIN CONTAINER
-   ============================================================ */
-
-.login-container {
-
-    width: 100%;
-
-    padding: 20px;
-}
-
-
-/* ============================================================
-   LOGIN CARD
-   ============================================================ */
-
-.login-card {
-
-    width: 100%;
-
-    max-width: 400px;
-
-    margin: 0 auto;
-
     padding: 40px;
 
-    background: #ffffff;
+    font-family: Arial, sans-serif;
 
-    border-radius: 16px;
-
-    box-shadow:
-        0 20px 50px rgba(0, 0, 0, 0.25);
-}
-
-
-/* ============================================================
-   HEADER
-   ============================================================ */
-
-.login-header {
-
-    text-align: center;
-
-    margin-bottom: 30px;
-}
-
-
-.login-header h1 {
-
-    margin: 0 0 10px;
-
-    font-size: 32px;
-
+    background: #f5f6f8;
     color: #222;
 }
 
-
-.login-header p {
-
-    margin: 0;
-
-    color: #777;
-
-    font-size: 15px;
+.container {
+    max-width: 1600px;
+    margin: 0 auto;
 }
 
-
-/* ============================================================
-   FORM
-   ============================================================ */
-
-.form-group {
-
-    margin-bottom: 20px;
+h1 {
+    margin-bottom: 25px;
 }
 
+/* =========================
+   Загрузка файла
+   ========================= */
 
-.form-group label {
+.upload-block {
+    display: flex;
+    align-items: center;
+    gap: 15px;
 
-    display: block;
-
-    margin-bottom: 8px;
-
-    font-size: 14px;
-
-    font-weight: 600;
-
-    color: #333;
+    margin-bottom: 25px;
 }
 
-
-.form-group input {
-
-    width: 100%;
-
-    height: 48px;
-
-    padding: 0 14px;
-
-    border: 1px solid #d5d5d5;
-
-    border-radius: 8px;
-
-    font-size: 16px;
-
-    outline: none;
-
-    transition:
-        border-color 0.2s,
-        box-shadow 0.2s;
+#csvFile {
+    display: none;
 }
 
+.file-label {
+    display: inline-block;
 
-.form-group input:focus {
+    padding: 10px 18px;
 
-    border-color: #2a5298;
-
-    box-shadow:
-        0 0 0 3px rgba(42, 82, 152, 0.12);
-}
-
-
-/* ============================================================
-   ERROR
-   ============================================================ */
-
-.error-message {
-
-    min-height: 20px;
-
-    margin-bottom: 10px;
-
-    text-align: center;
-
-    color: #d93025;
-
-    font-size: 14px;
-}
-
-
-/* ============================================================
-   BUTTON
-   ============================================================ */
-
-.login-button {
-
-    width: 100%;
-
-    height: 48px;
-
-    border: none;
-
-    border-radius: 8px;
-
-    background: #2a5298;
-
+    background: #222;
     color: white;
 
-    font-size: 16px;
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+.file-label:hover {
+    background: #444;
+}
+
+#fileName {
+    color: #666;
+}
+
+
+/* =========================
+   Таблица
+   ========================= */
+
+.table-wrapper {
+    width: 100%;
+
+    overflow-x: auto;
+
+    background: white;
+
+    border-radius: 8px;
+
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
+}
+
+.data-table {
+    width: 100%;
+
+    border-collapse: collapse;
+
+    min-width: 1100px;
+}
+
+.data-table th,
+.data-table td {
+    padding: 12px 14px;
+
+    border-bottom: 1px solid #ddd;
+
+    text-align: left;
+
+    vertical-align: top;
+}
+
+.data-table th {
+    background: #f0f1f3;
 
     font-weight: 600;
 
-    cursor: pointer;
-
-    transition:
-        background 0.2s,
-        transform 0.1s;
+    white-space: nowrap;
 }
 
-
-.login-button:hover {
-
-    background: #1e3c72;
+.data-table tbody tr:hover {
+    background: #f8f9fa;
 }
 
+/* Приоритет */
 
-.login-button:active {
-
-    transform: scale(0.98);
+.priority-A {
+    font-weight: 700;
 }
 
-
-/* ============================================================
-   MOBILE
-   ============================================================ */
-
-@media (max-width: 480px) {
-
-    .login-card {
-
-        padding: 30px 20px;
-
-        border-radius: 12px;
-    }
-
-    .login-header h1 {
-
-        font-size: 28px;
-    }
-
+.priority-B {
+    font-weight: 600;
 }
+
